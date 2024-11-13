@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Calorias e Preço dos Alimentos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Calorias e Preço</h1>
+
+    <form id="food-form">
+      <label for="food">Escolha o Alimento:</label>
+      <select id="food" name="food" required>
+        <option value="" disabled selected>Selecione um alimento</option>
+        <option value="maca">Maçã</option>
+        <option value="cheetos">Cheetos</option>
+        <option value="salmão">Salmão</option>
+        <option value="alface">Alface</option>
+        <option value="sucrilhos">Sucrilhos Kellogg's</option>
+        <option value="carne">Carne Contra Filé</option>
+        <option value="coca-cola">Coca-Cola</option>
+        <option value="oreo">Oreo</option>
+        <option value="milho">Milho em Lata</option>
+        <option value="hamburguer">Hamburguer Congelado</option>
+        <option value="sardinha">Sardinha Gomes da Costa</option>
+        <option value="feijao">Feijão Carioca</option>
+        <option value="doritos">Doritos</option>
+        <option value="grao-bico">Grão de Bico</option>
+        <option value="miojo">Miojo</option>
+        <option value="leite">Leite Integral</option>
+        <option value="suco">Suco Kapo Uva</option>
+        <option value="frango">Frango</option>
+      </select>
+
+      <label for="quantity">Quantidade (g/ml/unidade):</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="result" class="result">
+      <p id="calories"></p>
+      <p id="price"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
